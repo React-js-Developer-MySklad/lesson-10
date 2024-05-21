@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.production.js",
+    "build:qa": "webpack --config webpack.qa.js",
     "serve": "webpack serve --config webpack.development.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

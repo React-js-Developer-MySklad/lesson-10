@@ -6,8 +6,6 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = {
     entry: './main.tsx',
-    //mode: 'production',
-
     context: resolve(__dirname, 'src'),
     resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
@@ -36,7 +34,6 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg)$/i,
                 type: 'asset/inline',
             }
-
         ],
     },
     plugins: [

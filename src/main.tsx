@@ -4,8 +4,8 @@ import './styles.css'
 import logo from './assets/react.svg';
 
 const root = createRoot(document.getElementById('root'))
-//const i = 1;
-//i = ''
+// const i = 1;
+// i = ''
 root.render(
     <div>
         <Button/>
