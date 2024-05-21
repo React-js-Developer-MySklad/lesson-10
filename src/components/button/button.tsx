@@ -1,0 +1,1 @@
+export default () => <button className='button' onClick={() => alert('Button has been clicked')}>Click Me</button>
