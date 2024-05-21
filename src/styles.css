@@ -1,3 +1,21 @@
 .button {
     background-color: red;
 }
+
+.logo {
+    width: 100px;
+}
+
+svg {
+    fill: blue;
+    color: blue;
+}
+
+.inline-log {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-color: red;
+    -webkit-mask-image: url(./assets/react.svg);
+    mask-image: url(./assets/react.svg);
+}
