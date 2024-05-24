@@ -6,8 +6,22 @@ module.exports = merge(commonConfig, {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader' ]
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader' ],
+                exclude: /\.module\.css$/i
+            },
+
+            {
+                test: /\.module\.css$/i,
+                use: ['style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            esModule: false
+                        }
+                    }
+                ]
             }
         ]
     }
